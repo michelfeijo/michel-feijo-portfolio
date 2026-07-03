@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import { Mail, Linkedin, Github } from 'lucide-react';
 
+const WHATSAPP_URL =
+  'https://wa.me/5547997625507?text=Ola%20Michel%2C%20vi%20seu%20portfolio%20e%20gostaria%20de%20conversar';
+
 export default function Contact() {
   return (
     <section id="contact" className="py-32 container mx-auto px-6 md:px-12">
@@ -19,8 +22,10 @@ export default function Contact() {
           minha caixa de entrada está sempre aberta.
         </p>
         
-        <a 
-          href="mailto:michel.superacao@gmail.com" 
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block bg-primary text-primary-foreground px-10 py-5 rounded-sm font-mono font-bold hover:bg-primary/90 transition-colors mb-20 text-lg shadow-lg shadow-primary/20"
         >
           Diga Olá

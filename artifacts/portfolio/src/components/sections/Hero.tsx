@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
+const WHATSAPP_URL =
+  'https://wa.me/5547997625507?text=Ola%20Michel%2C%20vi%20seu%20portfolio%20e%20gostaria%20de%20conversar';
+
 export default function Hero() {
   return (
     <section className="relative min-h-[100dvh] flex flex-col justify-center container mx-auto px-6 md:px-12 pt-20 overflow-hidden">
@@ -53,7 +56,7 @@ export default function Hero() {
           <a href="#projects" className="bg-primary text-primary-foreground px-8 py-4 rounded-sm font-mono text-sm font-bold hover:bg-primary/90 transition-colors flex items-center justify-center min-w-[200px]">
             Ver Projetos
           </a>
-          <a href="#contact" className="border border-primary text-primary px-8 py-4 rounded-sm font-mono text-sm font-bold hover:bg-primary/10 transition-colors flex items-center justify-center min-w-[200px]">
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="border border-primary text-primary px-8 py-4 rounded-sm font-mono text-sm font-bold hover:bg-primary/10 transition-colors flex items-center justify-center min-w-[200px]">
             Entrar em Contato
           </a>
         </motion.div>
